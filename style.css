@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightseagreen;
+}
+
+.c-body {
+    background: rgb(44, 43, 43);
+    opacity: 1;
+    font-family: 'Short Stack', cursive;
+    margin: 20px auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+}
+/* 
+STOPWATCH
+*/
+
+h1 {
+    color: lightgoldenrodyellow;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#time {
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+.c-button {
+    margin: 10px 0;
+}
+
+.btn-start {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: lightgreen;
+    color: rgb(44, 43, 43);
+    transition: .3s ease all;
+}
+
+.btn-start:hover {
+    font-size: 18px;
+}
+
+.btn-stop {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: crimson;
+    color: rgb(44, 43, 43);
+    transition: .3s ease all;
+}
+
+.btn-stop:hover {
+    font-size: 18px;
+}
+
+.btn-reset {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: lightyellow;
+    color: rgb(44, 43, 43);
+    transition: .3s ease all;
+}
+
+.btn-reset:hover {
+    font-size: 18px;
+}
+
+#banderas {
+    margin-top: 10px;
+}
+
+#marca {
+    font-size: 18px;
+    font-weight: 400;
+    color: lightsalmon;
+}
+
+#tiempo {
+    font-size: 18px;
+    font-weight: 600;
+    color: antiquewhite;
+}
+/* 
+COUNTDOWN
+*/
+
+/* 
+INPUTS
+*/
+.cont-input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: lightgoldenrodyellow;
+}
+.cont-input input{
+    width: 50px;
+    margin: 0 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    background: lightgoldenrodyellow;
+    color: rgb(44, 43, 43);
+   
+}
+
+/* 
+TEMPORIZADOR
+*/
+.cont-temporizador {
+    display: none;
+    justify-content: center;
+    margin: 10px auto;
+    color: lightgoldenrodyellow;
+}
+
+.cont-temporizador .bloque {
+    margin: 0 5px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-temporizador .bloque div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 6px 2px #727272;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+/* 
+FOOTER
+*/
+
+footer{
+    display: block;
+    margin:10px;
+    text-align: center;
+    color: rgb(39, 38, 38);
+    font-family: 'Short Stack', cursive;
+    font-weight: 400;
+    font-size: 12px;
+    transition: .3s ease all;
+    } 
+    footer:hover{
+        letter-spacing: 2px;
+    }
+    footer a{
+        text-decoration: none;
+        color: crimson;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+/* 
+RESPONSIVE
+*/
+@media screen and (max-width:800px) {
+    .c-body {
+        width: 80%;
+    }
+
+    .cont-temporizador {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .c-body {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .cont-temporizador {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #time {
+        font-size: 40px;
+    }
+
+    .cont-temporizador .bloque div {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #time {
+        font-size: 30px;
+    }
+
+    .cont-temporizador {
+        display: none;
+        justify-content: center;
+    }
+
+    .cont-temporizador .bloque div {
+        margin-top: 10px;
+    }
+    .cont-temporizador .bloque p{
+        font-size: 10px;
+    }
+}

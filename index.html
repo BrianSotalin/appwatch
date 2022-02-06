@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Codystar:wght@300&family=Short+Stack&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="c-body">
+        <div class="c-time">
+            <h1 id="titulo">Stopwatch <i class="fas fa-stopwatch"></i></h1>
+            <div class="screen">
+                <span id="time">00:00:00.00</span>
+            </div>
+            <hr>
+            <div class="c-button">
+                <button id="btn-start" class="btn-start"><i class="fas fa-play"></i></button>
+                <button id="btn-stop" class="btn-stop"><i class="fas fa-stop"></i></button>
+                <button id="btn-reset" class="btn-reset"><i class="fas fa-undo"></i></button>
+            </div>
+        </div>
+
+        <div id="banderas">
+            <p id="marca"></p>
+            <p id="tiempo"></p>
+        </div>
+    </div>
+    <hr>
+    <div class="c-body">
+        <h1>countdown <i class="fas fa-hourglass-half"></i></h1>
+        <div class="cont-input">
+            <p>Horas <input type="number" id="input-hora" placeholder="hora" value="0"> </p> 
+            <p>Minutos <input type="number" id="input-min" placeholder="minutos" value="0"></p> 
+             <p>Segundos <input type="number" id="input-seg" placeholder="segundos" value="0"></p>
+        </div>
+        <div class="c-button">
+            <button id="btn-play" class="btn-start" onclick="runCount()"><i class="fas fa-play"></i></button>
+            <button id="btn-clear" class="btn-reset"><i class="fas fa-undo" onclick="reinicio()"></i></button>
+        </div>
+        <hr>
+        <div class="cont-temporizador" id="temporizador">
+            <!-- <h1><i class="fas fa-hourglass-half"></i></h1>
+            <hr> -->
+    
+            <div class="bloque">
+                <div class="horas" id="horas">00</div>
+                <p>HORAS</p>
+            </div>
+            <div class="bloque">
+                <div class="minutos" id="minutos">00</div>
+                <p>MINUTOS</p>
+            </div>
+            <div class="bloque">
+                <div class="segundos" id="segundos">00</div>
+                <p>SEGUNDOS</p>
+            </div>
+        </div>
+    </div>
+
+    <footer> Powered by <a href="https://briansotalin.github.io/mypage/"> <i class="fas fa-dragon"></i>sota </a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
